@@ -1,0 +1,48 @@
+.list-group-item {
+	width: 95%;
+    margin: 1% !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+.responsive-width {
+    font-size: 1vw;
+}
+
+@media (min-width: 576px) {
+	.list-group-item {
+		width: 47%;
+		margin: 5px 1.5% !important;
+	}
+}
+
+@media (min-width: 768px) {
+	.list-group-item {
+		width: 31.333%;
+		margin: 5px 1% !important;
+	}
+}
+
+@media (min-width: 992px) {
+	.list-group-item {
+		width: 23%;
+		margin: 5px 1% !important;
+	}
+}
+
+/* Other styles for the page not related to the animated dropdown */
+
+body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062e6, #33aeff);
+  -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+ /*
+button {
+  touch-action: manipulation;
+}*/
