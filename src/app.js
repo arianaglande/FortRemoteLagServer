@@ -8,7 +8,7 @@ class App extends Component {
         super(props);
         this.state = { parsed: {}, iteration: 0 };
 
-        this.ws = new WebSocket("ws://!serveruri!.herokuapp.com/?gui");
+        this.ws = new WebSocket("wss://!serveruri!.herokuapp.com/?gui");
         this.ws.onopen = e => {
             console.log("Connected to live ws");
         };
