@@ -7,7 +7,7 @@ app.use("/dist", express.static(__dirname + "/dist/"))
 
 app.ws("/", (client, request) => {
     if (typeof (request.headers['x-hash']) == 'string' && typeof (request.headers['x-wn']) == 'string' && typeof (request.headers['x-fn']) == 'string') {
-        var slaveId = `${request.headers['x-wn']}__${request.headers['x-fn']}_${x-hash}`
+        var slaveId = `${request.headers['x-hash']}__${request.headers['x-wn']}__${request.headers['x-fn']}`
         var lastPing = Date.now()
         console.log('Slave connected:', slaveId)
 
